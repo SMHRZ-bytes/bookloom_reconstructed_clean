@@ -1,0 +1,31 @@
+[
+  {
+    "pdf_path": "path/to/book1.pdf",
+    "title": "Book Title 1",
+    "author": "Author Name",
+    "description": "Book description here",
+    "publication_year": 2024,
+    "category": "fiction",
+    "license_type": "public-domain",
+    "cover_image_path": "path/to/cover1.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "path/to/book2.pdf",
+    "title": "Book Title 2",
+    "author": "Author Name 2",
+    "description": "Book description here",
+    "publication_year": 2023,
+    "category": "science-fiction",
+    "license_type": "CC",
+    "cover_image_path": "path/to/cover2.jpg",
+    "is_public": true
+  }
+]
+
+
+
+
+
+
+

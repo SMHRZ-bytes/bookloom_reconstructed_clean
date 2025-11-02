@@ -1,0 +1,339 @@
+[
+  {
+    "pdf_path": "books/book1.pdf",
+    "title": "Book Title 1",
+    "author": "Author Name 1",
+    "description": "Description of book 1 - A captivating story that will keep you engaged from start to finish.",
+    "publication_year": 2024,
+    "category": "fiction",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book1.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book2.pdf",
+    "title": "Book Title 2",
+    "author": "Author Name 2",
+    "description": "Description of book 2 - An exciting adventure that takes you on an incredible journey.",
+    "publication_year": 2023,
+    "category": "adventure",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book2.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book3.pdf",
+    "title": "Book Title 3",
+    "author": "Author Name 3",
+    "description": "Description of book 3 - A mysterious tale full of intrigue and suspense.",
+    "publication_year": 2022,
+    "category": "mystery",
+    "license_type": "CC",
+    "cover_image_path": "covers/book3.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book4.pdf",
+    "title": "Book Title 4",
+    "author": "Author Name 4",
+    "description": "Description of book 4 - Science fiction at its finest with mind-bending concepts.",
+    "publication_year": 2024,
+    "category": "science-fiction",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book4.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book5.pdf",
+    "title": "Book Title 5",
+    "author": "Author Name 5",
+    "description": "Description of book 5 - A fantasy world filled with magic and wonder.",
+    "publication_year": 2023,
+    "category": "fantasy",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book5.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book6.pdf",
+    "title": "Book Title 6",
+    "author": "Author Name 6",
+    "description": "Description of book 6 - A spine-chilling horror story that will keep you up at night.",
+    "publication_year": 2024,
+    "category": "horror",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book6.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book7.pdf",
+    "title": "Book Title 7",
+    "author": "Author Name 7",
+    "description": "Description of book 7 - A classic piece of literature that stands the test of time.",
+    "publication_year": 1850,
+    "category": "classic",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book7.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book8.pdf",
+    "title": "Book Title 8",
+    "author": "Author Name 8",
+    "description": "Description of book 8 - A heartwarming romance that will touch your soul.",
+    "publication_year": 2023,
+    "category": "romance",
+    "license_type": "CC",
+    "cover_image_path": "covers/book8.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book9.pdf",
+    "title": "Book Title 9",
+    "author": "Author Name 9",
+    "description": "Description of book 9 - A dystopian vision of the future that makes you think.",
+    "publication_year": 2024,
+    "category": "dystopian",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book9.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book10.pdf",
+    "title": "Book Title 10",
+    "author": "Author Name 10",
+    "description": "Description of book 10 - Educational and informative non-fiction content.",
+    "publication_year": 2023,
+    "category": "non-fiction",
+    "license_type": "CC",
+    "cover_image_path": "covers/book10.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book11.pdf",
+    "title": "Book Title 11",
+    "author": "Author Name 11",
+    "description": "Description of book 11 - Another engaging fiction novel.",
+    "publication_year": 2024,
+    "category": "fiction",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book11.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book12.pdf",
+    "title": "Book Title 12",
+    "author": "Author Name 12",
+    "description": "Description of book 12 - An action-packed adventure story.",
+    "publication_year": 2022,
+    "category": "adventure",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book12.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book13.pdf",
+    "title": "Book Title 13",
+    "author": "Author Name 13",
+    "description": "Description of book 13 - A complex mystery with unexpected twists.",
+    "publication_year": 2024,
+    "category": "mystery",
+    "license_type": "CC",
+    "cover_image_path": "covers/book13.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book14.pdf",
+    "title": "Book Title 14",
+    "author": "Author Name 14",
+    "description": "Description of book 14 - Space exploration and futuristic technology.",
+    "publication_year": 2023,
+    "category": "science-fiction",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book14.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book15.pdf",
+    "title": "Book Title 15",
+    "author": "Author Name 15",
+    "description": "Description of book 15 - Epic fantasy with dragons and heroes.",
+    "publication_year": 2024,
+    "category": "fantasy",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book15.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book16.pdf",
+    "title": "Book Title 16",
+    "author": "Author Name 16",
+    "description": "Description of book 16 - A terrifying horror story.",
+    "publication_year": 2023,
+    "category": "horror",
+    "license_type": "CC",
+    "cover_image_path": "covers/book16.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book17.pdf",
+    "title": "Book Title 17",
+    "author": "Author Name 17",
+    "description": "Description of book 17 - A timeless classic novel.",
+    "publication_year": 1900,
+    "category": "classic",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book17.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book18.pdf",
+    "title": "Book Title 18",
+    "author": "Author Name 18",
+    "description": "Description of book 18 - A beautiful love story.",
+    "publication_year": 2024,
+    "category": "romance",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book18.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book19.pdf",
+    "title": "Book Title 19",
+    "author": "Author Name 19",
+    "description": "Description of book 19 - A dystopian future world.",
+    "publication_year": 2023,
+    "category": "dystopian",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book19.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book20.pdf",
+    "title": "Book Title 20",
+    "author": "Author Name 20",
+    "description": "Description of book 20 - Informative non-fiction content.",
+    "publication_year": 2022,
+    "category": "non-fiction",
+    "license_type": "CC",
+    "cover_image_path": "covers/book20.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book21.pdf",
+    "title": "Book Title 21",
+    "author": "Author Name 21",
+    "description": "Description of book 21 - A compelling fiction story.",
+    "publication_year": 2024,
+    "category": "fiction",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book21.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book22.pdf",
+    "title": "Book Title 22",
+    "author": "Author Name 22",
+    "description": "Description of book 22 - An exciting adventure.",
+    "publication_year": 2023,
+    "category": "adventure",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book22.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book23.pdf",
+    "title": "Book Title 23",
+    "author": "Author Name 23",
+    "description": "Description of book 23 - A puzzling mystery.",
+    "publication_year": 2024,
+    "category": "mystery",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book23.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book24.pdf",
+    "title": "Book Title 24",
+    "author": "Author Name 24",
+    "description": "Description of book 24 - Advanced science fiction concepts.",
+    "publication_year": 2023,
+    "category": "science-fiction",
+    "license_type": "CC",
+    "cover_image_path": "covers/book24.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book25.pdf",
+    "title": "Book Title 25",
+    "author": "Author Name 25",
+    "description": "Description of book 25 - Magical fantasy world.",
+    "publication_year": 2024,
+    "category": "fantasy",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book25.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book26.pdf",
+    "title": "Book Title 26",
+    "author": "Author Name 26",
+    "description": "Description of book 26 - Psychological horror.",
+    "publication_year": 2022,
+    "category": "horror",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book26.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book27.pdf",
+    "title": "Book Title 27",
+    "author": "Author Name 27",
+    "description": "Description of book 27 - A literary classic.",
+    "publication_year": 1850,
+    "category": "classic",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book27.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book28.pdf",
+    "title": "Book Title 28",
+    "author": "Author Name 28",
+    "description": "Description of book 28 - A romantic tale.",
+    "publication_year": 2024,
+    "category": "romance",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book28.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book29.pdf",
+    "title": "Book Title 29",
+    "author": "Author Name 29",
+    "description": "Description of book 29 - Dystopian society.",
+    "publication_year": 2023,
+    "category": "dystopian",
+    "license_type": "CC",
+    "cover_image_path": "covers/book29.jpg",
+    "is_public": true
+  },
+  {
+    "pdf_path": "books/book30.pdf",
+    "title": "Book Title 30",
+    "author": "Author Name 30",
+    "description": "Description of book 30 - Educational non-fiction.",
+    "publication_year": 2024,
+    "category": "non-fiction",
+    "license_type": "public-domain",
+    "cover_image_path": "covers/book30.jpg",
+    "is_public": true
+  }
+]
+
+
+
+
+
+
+

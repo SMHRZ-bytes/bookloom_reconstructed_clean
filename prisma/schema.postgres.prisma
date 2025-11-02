@@ -1,0 +1,193 @@
+// PostgreSQL version of schema for Vercel deployment
+// Copy this to schema.prisma when deploying
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// SQLite doesn't support enums, using String instead
+// enum Role {
+//   USER
+//   EDITOR
+//   ADMIN
+// }
+
+// enum BookStatus {
+//   DRAFT
+//   PUBLISHED
+//   ARCHIVED
+// }
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  password      String?
+  image         String?
+  role          String    @default("USER") // USER, EDITOR, ADMIN
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts      Account[]
+  sessions      Session[]
+  profile       Profile?
+  books         Book[]
+  reviews       Review[]
+  collections   Collection[]
+  verifications VerificationToken[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  id         String   @id @default(cuid())
+  identifier String
+  token      String   @unique
+  expires    DateTime
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([identifier, token])
+}
+
+model Profile {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  bio       String?
+  avatar    String?
+  website   String?
+  location  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Book {
+  id             String     @id @default(cuid())
+  title          String
+  author         String?
+  description    String?    @db.Text
+  coverImage     String?
+  pdfUrl         String?
+  publicationYear Int?
+  licenseType    String     @default("copyrighted")
+  category       String?
+  status         String     @default("DRAFT")
+  isPublic       Boolean    @default(false)
+  analyzedAt     DateTime?
+  authorId       String
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+
+  uploadedBy     User             @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  reviews        Review[]
+  collections    CollectionBook[]
+  extractedItems ExtractedItem[]
+
+  @@index([authorId])
+  @@index([status])
+  @@index([licenseType])
+  @@index([isPublic])
+  @@index([category])
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  content   String   @db.Text
+  rating    Int      @default(5)
+  bookId    String
+  userId    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  book Book @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([bookId, userId])
+  @@index([bookId])
+  @@index([userId])
+}
+
+model Collection {
+  id          String   @id @default(cuid())
+  name        String
+  description String?  @db.Text
+  isPublic    Boolean  @default(false)
+  userId      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user  User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  books CollectionBook[]
+
+  @@index([userId])
+}
+
+model CollectionBook {
+  id           String   @id @default(cuid())
+  collectionId String
+  bookId        String
+  addedAt      DateTime @default(now())
+
+  collection Collection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
+  book       Book       @relation(fields: [bookId], references: [id], onDelete: Cascade)
+
+  @@unique([collectionId, bookId])
+  @@index([collectionId])
+  @@index([bookId])
+}
+
+model ExtractedItem {
+  id        String   @id @default(cuid())
+  bookId    String
+  type      String
+  content   String   @db.Text
+  pageNumber Int?
+  position  Int?
+  createdAt DateTime @default(now())
+
+  book Book @relation(fields: [bookId], references: [id], onDelete: Cascade)
+
+  @@index([bookId])
+  @@index([type])
+}
+
+
+
+
+
+
+
